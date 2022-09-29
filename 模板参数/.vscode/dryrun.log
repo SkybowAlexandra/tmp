@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/zhao/project/框架/MyFramework'
+g++  -g -Wall -std=c++17 -lpthread -levent -lmysqlpp -lz -c  -I include -o obj/main.o project/main.cpp
+g++  -g -Wall -std=c++17 -lpthread -levent -lmysqlpp -lz -c  -I include -o obj/network.o src/network.cpp
+g++  -g -Wall -std=c++17 -lpthread -levent -lmysqlpp -lz -c  -I include -o obj/time_correlation.o src/time_correlation.cpp
+g++  -g -Wall -std=c++17 -lpthread -levent -lmysqlpp -lz -c  -I include -o obj/string_correlation.o src/string_correlation.cpp
+g++  -g -Wall -std=c++17 -lpthread -levent -lmysqlpp -lz -c  -I include -o obj/error_functions.o src/error_functions.c
+g++  -o Framework.out obj/main.o obj/network.o obj/time_correlation.o obj/string_correlation.o obj/error_functions.o -g -Wall
+make: Leaving directory '/home/zhao/project/框架/MyFramework'
+ 
